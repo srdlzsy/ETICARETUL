@@ -1,0 +1,28 @@
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Ürün başlığı ortalamak için container stil ayarları */
+.my-4 {
+  display: flex;
+  justify-content: center; /* Yatayda ortalar */
+  align-items: center; /* Dikeyde ortalar */
+  margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Başlık ve formu yatayda yan yana hizalamak için stil ayarları */
+.header-container {
+  display: flex;
+  align-items: center; /* Dikeyde ortalar */
+  justify-content: space-between; /* Aralarındaki boşlukları eşitler */
+  margin-bottom: 20px; /* Alt boşluk */
+}
+
+.header-container h2 {
+  margin: 0; /* Başlık etrafındaki varsayılan boşlukları kaldırır */
+}
+
+.header-container form {
+  display: flex;
+  align-items: center; /* Form içindeki elemanları dikeyde ortalar */
+}

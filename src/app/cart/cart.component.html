@@ -1,0 +1,35 @@
+<div class="cart-container">
+  <button class="btn btn-light" (click)="toggleCart()">
+    <i class="fa fa-shopping-cart"> Sepetim</i> <!-- Font Awesome sepet simgesi -->
+  </button>
+    <!-- Sepet içeriği sadece sepet açık olduğunda gösterilir -->
+    <div *ngIf="isCartOpen">
+      <div *ngIf="cartItems.length === 0">
+        <p>Your cart is empty.</p>
+      </div>
+      <div *ngIf="cartItems.length > 0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of cartItems">
+              <td>{{ item.productName }}</td>
+              <td>{{ item.price }}</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>{{ getTotalPrice() | currency }}</strong></td> <!-- Toplam fiyat gösterimi -->
+            </tr>
+          </tfoot>
+        </table>
+        <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+  

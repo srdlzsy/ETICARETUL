@@ -1,0 +1,17 @@
+<h2 class="my-4">{{ title }}</h2>
+
+<!-- Kategorileri Listele -->
+<div class="list-group">
+  <!-- Tüm Ürünler Butonu -->
+  <button class="list-group-item list-group-item-action" (click)="categoryService.selectCategory(null)">
+    Tüm Ürünler
+  </button>
+
+  <!-- Kategorileri Listele -->
+  <button *ngFor="let cat of categories"
+          class="list-group-item list-group-item-action"
+          (click)="selectCategory(cat.categoryId)">
+    {{ cat.name }}
+  </button>
+</div>
+

@@ -1,0 +1,167 @@
+/* Ana konteynerin düzeni */
+.container {
+    margin-top: 20px;
+  }
+  
+  /* Kategori ve ürün listeleme için stil */
+  .col-md-3,
+  .col-md-9 {
+    padding: 10px;
+  }
+/* Kategori bölümünün stil ayarları */
+/* Kategori bölümünün stil ayarları */
+.col-md-3 {
+  position: sticky;
+  top: 20px; /* Kategorinin üst kısmının pencerenin üstüne yapışmasını sağlar */
+  background-color: #f8f9fa; /* Kategori arka plan rengini açık gri yapar */
+  border: 1px solid #dee2e6; /* Kategori etrafına hafif bir kenarlık ekler */
+  padding: 15px; /* Kategorinin içindeki boşlukları ayarlar */
+  border-radius: 5px; /* Köşeleri yuvarlatır */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+  z-index: 1; /* Diğer içeriklerin üstünde kalmasını sağlar */
+  height: calc(100vh - 40px); /* Yüksekliği viewport yüksekliğinden biraz çıkarır */
+  overflow-y: auto; /* İçerik taşarsa kaydırma çubuğu ekler */
+}
+
+/* Kategori başlığı stili */
+.col-md-3 h3 {
+  margin-top: 0; /* Başlığın üstündeki boşluğu kaldırır */
+  margin-bottom: 10px; /* Başlığın altındaki boşluğu ayarlar */
+  font-size: 1.5rem; /* Başlık boyutunu ayarlar */
+}
+
+/* Kategori öğeleri stili */
+.col-md-3 ul {
+  list-style: none; /* Liste işaretlerini kaldırır */
+  padding: 0; /* Sol iç boşluğu kaldırır */
+  margin: 0; /* Üst ve alt boşlukları kaldırır */
+}
+
+.col-md-3 li {
+  padding: 10px 0; /* Liste öğeleri arasındaki boşluğu ayarlar */
+  border-bottom: 1px solid #dee2e6; /* Liste öğeleri arasına ince bir kenarlık ekler */
+}
+
+.col-md-3 li:last-child {
+  border-bottom: none; /* Son liste öğesinin altında kenarlık olmaz */
+}
+
+.col-md-3 a {
+  text-decoration: none; /* Bağlantı altını çizer */
+  color: #007bff; /* Bağlantı rengini mavi yapar */
+}
+
+.col-md-3 a:hover {
+  text-decoration: underline; /* Hover durumunda altı çizili yapar */
+  color: #0056b3; /* Hover durumunda bağlantı rengini koyulaştırır */
+}
+
+  /* Container ve diğer öğeler için genel stil ayarları */
+.container {
+  margin-top: 20px;
+}
+
+/* Sepet bölmesini sağa yerleştirir ve sabitler */
+.cart-sidebar {
+  position: sticky;
+  top: 20px; /* Sepet üst kısmının pencerenin üstüne yapışmasını sağlar */
+  background-color: #f8f9fa; /* Sepet arka plan rengini açık gri yapar */
+  border: 1px solid #dee2e6; /* Sepet etrafına hafif bir kenarlık ekler */
+  padding: 15px; /* Sepetin içindeki boşlukları ayarlar */
+  border-radius: 5px; /* Sepetin köşelerini yuvarlar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sepet etrafına hafif bir gölge ekler */
+  height: 100vh; /* Sepetin yüksekliğini tam pencere yüksekliği yapar */
+  overflow-y: auto; /* İçerik taşarsa kaydırma çubuğu ekler */
+}
+
+/* Sepet başlığı */
+.cart-sidebar h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #343a40; /* Başlık rengini koyu gri yapar */
+}
+
+/* Sepetteki ürünler */
+.cart-sidebar .cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Ürün görseli */
+.cart-sidebar .cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Ürün bilgileri */
+.cart-sidebar .cart-item .item-info {
+  flex: 1;
+}
+
+/* Ürün adı */
+.cart-sidebar .cart-item .item-info .item-name {
+  font-size: 16px;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+/* Ürün fiyatı */
+.cart-sidebar .cart-item .item-info .item-price {
+  fo
+
+  /* Sepet kenar çubuğu (sidebar) */
+  .cart-sidebar {
+    position: fixed;
+    right: 0;
+    top: 80px; /* Navbar'ın altında durmasını sağla */
+    width: 300px; /* Sabit genişlik */
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+    height: 100%; /* Tüm yüksekliği kaplasın */
+    overflow-y: auto; /* İçerik taşarsa kaydırma çubuğu göstersin */
+    padding: 15px;
+  }
+  /* Ana konteynerin düzeni */
+.container {
+  margin-top: 20px;
+}
+
+/* Kategori ve ürün listeleme için stil */
+.col-md-3, .col-md-9 {
+  padding: 10px;
+}
+
+/* Sepet kenar çubuğu (sidebar) */
+.cart-sidebar {
+  position: fixed;
+  right: 0;
+  top: 80px; /* Navbar'ın altında durmasını sağla */
+  width: 300px; /* Sabit genişlik */
+  background-color: #f8f9fa;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+  height: 100%; /* Tüm yüksekliği kaplasın */
+  overflow-y: auto; /* İçerik taşarsa kaydırma çubuğu göstersin */
+  padding: 15px;
+}
+
+/* Daha iyi mobil uyum için */
+@media (max-width: 768px) {
+  .cart-sidebar {
+    position: relative;
+    width: 100%;
+    top: 0;
+    box-shadow: none;
+    height: auto;
+  }
+}
+
+  
+  
+}

@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+  }
+  
+  table {
+    margin-top: 10px;
+  }
+  
+  /* Açılır sepet animasyonu */
+  div[ngIf] {
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  
+  h3 {
+    cursor:pointer ;/* İmlecin değişmemesini sağlar */
+    
+  }
+  /* Buton stili */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background-color: #007bff; /* Buton rengi */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  
+}
+
+/* Buton stili */
+.btn-light {
+  background-color: #f8f9fa; /* Açık arka plan rengi */
+  color: #343a40; /* Yazı rengi */
+  border: 2px solid #343a40; /* Kenar çizgisi */
+  border-radius: 5px;
+  padding: 12px 20px; /* İç boşluk */
+  font-size: 18px; /* Yazı boyutu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+}
+
+.btn-light i {
+  font-size: 24px; /* Simge boyutu */
+  margin-right: 8px; /* Simge ile metin arasına boşluk */
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea; /* Hover durumunda buton rengi */
+  color: #212529; /* Hover durumunda yazı rengi */
+  border-color: #212529; /* Hover durumunda kenar rengi */
+}
+
+.btn-light:focus {
+  outline: none; /* Odaklanma kenarlığını kaldırır */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Odaklanma gölgesi */
+}
+
